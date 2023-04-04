@@ -9,9 +9,9 @@ public class Author {
 
     @Override
     public String toString() {
-        return name + '\'' +
-                surname + '\'' +
-                middleName + '\'';
+        return name + " " +
+                surname + " " +
+                middleName;
     }
 
     public Author(String name, String surname, String middleName) {

@@ -4,19 +4,19 @@ import java.util.Objects;
 
 public class Book {
     private String poem;
-    private String author;
+    private Author author;
 
     private int publicationYear;
 
     @Override
     public String toString() {
         return
-                poem + '\''
-                        + author + '\'' +
+                poem + " "
+                        + author + " " +
                         +publicationYear;
     }
 
-    public Book(String author, String poem, int publicationYear) {
+    public Book(Author author, String poem, int publicationYear) {
 
         this.poem = poem;
         this.author = author;
@@ -28,10 +28,10 @@ public class Book {
         return this.poem;
     }
 
-    public String getAuthor() {
-
-        return author;
-    }
+//    public String getAuthor() {
+//
+//        return author;
+//    }
 
     public int getPublicationYear() {
 
